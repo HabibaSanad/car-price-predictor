@@ -9,14 +9,22 @@ model = joblib.load("car_price_model.pkl")
 
 # Page title
 st.title(" Car Price Prediction App")
+
+# Force English digits
 st.markdown("""
 <style>
-* {
-    font-family: "Arial", sans-serif !important;
+html, body, [class*="css"] {
+    font-family: 'Arial';
     unicode-bidi: plaintext;
+}
+* {
+    font-variant-numeric: normal;
+    direction: ltr;
 }
 </style>
 """, unsafe_allow_html=True)
+
+
 
 st.write("""
 Welcome to the Car Price Prediction App!
