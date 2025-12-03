@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-import locale
-locale.setlocale(locale.LC_NUMERIC, 'en_US.UTF-8')
 
 
 # Load model
