@@ -35,4 +35,5 @@ if st.button("Predict Price"):
 
     # Predict price
     price_pred = model.predict(input_df)[0]
-    st.success(f"Predicted Car Price: ${price_pred:,.2f}")
+    price_str = "{:,.2f}".format(price_pred)  
+    st.success(f"Predicted Car Price: ${price_str}")
